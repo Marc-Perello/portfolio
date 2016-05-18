@@ -28,7 +28,7 @@ $container: 1440px;
 }
 
 .bloc_2{
-    background: blue;
+    background: yellow;
     height: 300px;
     @include span-columns(6);
     @include shift(4);
