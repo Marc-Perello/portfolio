@@ -28,24 +28,40 @@ body{
 
 .full-width{
   width: 100%;
-  background-color: #00AAD0;
+  background-color: $blaucel;
 }
+
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
 
 header{
   height: 130px;
+  @include outer-container($max-width);
 }
 
 .logo{
-  border-left: 1px solid #182a33;
-  padding-left:25px;
+  border-left: 1px solid $blacky;
+  padding-left:15px;
   margin-top: 40px;
-  @include span-columns(5);
-  @include shift(.5);
-}
+  @include span-columns(11);
+  @include shift(1);
+
+  // Media Queries
+  @include media($l) {
+            padding-left:25px;
+            margin-top: 40px;
+            @include span-columns(5.5);
+            @include shift(.5);
+            }
+           // @include media($l) {
+            //} 
+  }
 
 h1{
   @include slab(700, 3.6em);
-  color:#182a33;
+  color:$blacky;
   letter-spacing: 2;
   line-height: 1em;
   @include no-space;
@@ -53,43 +69,82 @@ h1{
 
 .subtitle{
   @include roboto(400, 2em);
-  color:#182a33;
+  color:$blacky;
   line-height: 2em;
   @include no-space;
 }
 
 .social-media{
-    @include no-space;
-    @include span-columns(6);
-    ul{
-      float:right;
-      margin-top: 40px;
+    @include span-columns(11);
+    @include shift(1);
+    //@include no-space;
+        // Media Queries
+        @include media($l) {
+                @include span-columns(5.5);
+                @include shift(0);
+                }
     }
-    li{
+
+  .social-media ul{
+    padding-left: 15px;
+    padding-bottom: 25px;
+          // Media Queries
+          @include media($l) {
+            margin-top: 40px;
+            float:right;
+            }
+    }
+   .social-media li{
       display: inline;
       list-style-type: none;
-      margin-left: 20px; 
+      margin-right: 20px; 
     }
-     a{
+    .social-media li:last-child {
+    margin:0;
+    }
+    .social-media a{
+      opacity:.3;
       text-decoration: none;
     }
-}
 
 .diagonal-top{
-  height: 60px;
-  @include linear-gradient(to right bottom, #fff 50%, $cian 50.5%);
+  height: 20px;
+  @include linear-gradient(to right bottom, #fff 50%, $blaucel 50.5%);
+  // Media Queries
+      @include media($m) {
+                height: 40px;
+                }
+        @include media($l) {
+                height: 60px;
+                }
 }
 
-#about {
-  .title{
+
+/* ==========================================================================
+   About
+   ========================================================================== */
+.title{
     border-left: 1px solid white;
     padding-left:25px;
     margin-top: 60px;
-    @include span-columns(3.5);
-    @include shift(.5);
+    @include span-columns(11);
+    @include shift(1);
+    
+    // Media Queries
+      //@include media($m) {
+               
+               // }
+        @include media($l) {
+                @include span-columns(3.5);
+                @include shift(.5);
+                }
   }
+
+#about {
+  
   h2{
-    @include slab(700, 3.6em, white);
+    @include slab(700, 3.6em);
+    color:white;
     letter-spacing: 2;
     line-height: 1em;
     @include no-space;
@@ -103,21 +158,24 @@ h1{
     color:white;
   }
   p{
-    @include roboto(300, 2.4em, white);
+    @include roboto(300, 2.4em);
+    color:white;
     line-height: 1.5em;
     @include no-space;
   }
   span{
-    @include roboto(700, 1em, white);
+    @include roboto(700, 1em);
+    color:white;
   }
   a{
-    @include slab(700, 1em, white);
-    border-bottom: 3px solid #8cc8df;
+    @include slab(700, 1em);
+    color:white;
+    border-bottom: 3px solid $blauhover;
     text-decoration: none;
   }
   a:hover{
-    color:#8cc8df;
-    border-bottom: 2px solid #8cc8df;
+    color:$blauhover;
+    border-bottom: 2px solid $blauhover;
   }
   br{
     line-height: 3em;
@@ -127,14 +185,15 @@ h1{
 #featured-projects{
   padding-top: 80px;
   .title{
-    border-left: 1px solid #182a33;
+    border-left: 1px solid $blacky;
     padding-left:25px;
     //margin-top: 60px;
     @include span-columns(11.5);
     @include shift(.5);
   }
   h2{
-    @include slab(700, 3.6em, blacky);
+    @include slab(700, 3.6em);
+    color: $blacky;
     letter-spacing: 2;
     line-height: 1em;
     @include no-space;
@@ -146,9 +205,6 @@ h1{
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-
-}
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
@@ -156,7 +212,6 @@ h1{
        (min-resolution: 120dpi) {
 
 }
-
 
 
 @import 'print';

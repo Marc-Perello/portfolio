@@ -1,27 +1,39 @@
 // mixins
 
+// Breakpoints
+$bp-medium: 48em; // 768px
+$bp-large: 64em; // 1024px
+$bp-xlarge: 90.1em; // 1441px
+$bp-xxlarge: 120em; // 1920px
+
+// Media Queries
+$m: min-width $bp-medium;
+$l: min-width $bp-large;
+$xl: min-width $bp-xlarge;
+$xxl: min-width $bp-xxlarge;
+
 $blacky:#182a33;
-$cian:#00AAD0;
-$blueWIP:#487e99;
+$blaucel:#00AAD0;
+$blaufosc:#487e99;
+$blauhover:#8cc8df;
+
 
 @mixin smoothy{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-@mixin roboto($weight, $size, $color:$blacky) {
+@mixin roboto($weight, $size) {
  font-family: 'Roboto', Helvetica, sans-serif; 
  font-weight: $weight; 
  font-size: $size; 
- color: $color;
  @include smoothy;
 }
 
-@mixin slab($weight, $size, $color:$blacky) {
+@mixin slab($weight, $size) {
  font-family: 'Roboto Slab', Times, serif; 
  font-weight: $weight; 
  font-size: $size; 
- color: $color;
  @include smoothy;
 }
 
