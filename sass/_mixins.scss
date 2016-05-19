@@ -1,0 +1,35 @@
+// mixins
+
+$blacky:#182a33;
+$cian:#00AAD0;
+$blueWIP:#487e99;
+
+@mixin smoothy{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin roboto($weight, $size, $color:$blacky) {
+ font-family: 'Roboto', Helvetica, sans-serif; 
+ font-weight: $weight; 
+ font-size: $size; 
+ color: $color;
+ @include smoothy;
+}
+
+@mixin slab($weight, $size, $color:$blacky) {
+ font-family: 'Roboto Slab', Times, serif; 
+ font-weight: $weight; 
+ font-size: $size; 
+ color: $color;
+ @include smoothy;
+}
+
+@mixin border-box{
+    box-sizing: border-box;
+}
+
+@mixin no-space{
+    margin: 0;
+    padding: 0;
+}

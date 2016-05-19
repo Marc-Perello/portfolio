@@ -1,46 +1,145 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700);
 @import 'reset';
 @import 'bourbon';
 @import 'grid-settings';
 @import 'neat';
-
+@import 'mixins';
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
-$container: 1440px;
+$max-width: 1280px;
 
 
-.class{
-    @include transition(all .3s);
-    @include clearfix();
+html {
+  font-size:100%;
 }
 
-.contenidor{
-    @include outer-container($container);
+body{
+ font-size:10px;
+ // background: url('../img/porfolio_bg.jpg')center top no-repeat;
 }
 
-
-.bloc_1{
-    background: red;
-    height: 200px;
-    margin-bottom: 20px;
+.container{
+    @include outer-container($max-width);
 }
 
-.bloc_2{
-    background: yellow;
-    height: 300px;
+.full-width{
+  width: 100%;
+  background-color: #00AAD0;
+}
+
+header{
+  height: 130px;
+}
+
+.logo{
+  border-left: 1px solid #182a33;
+  padding-left:25px;
+  margin-top: 40px;
+  @include span-columns(5);
+  @include shift(.5);
+}
+
+h1{
+  @include slab(700, 3.6em);
+  color:#182a33;
+  letter-spacing: 2;
+  line-height: 1em;
+  @include no-space;
+}
+
+.subtitle{
+  @include roboto(400, 2em);
+  color:#182a33;
+  line-height: 2em;
+  @include no-space;
+}
+
+.social-media{
+    @include no-space;
     @include span-columns(6);
-    @include shift(4);
-
-
+    ul{
+      float:right;
+      margin-top: 40px;
+    }
+    li{
+      display: inline;
+      list-style-type: none;
+      margin-left: 20px; 
+    }
+     a{
+      text-decoration: none;
+    }
 }
 
+.diagonal-top{
+  height: 60px;
+  @include linear-gradient(to right bottom, #fff 50%, $cian 50.5%);
+}
 
+#about {
+  .title{
+    border-left: 1px solid white;
+    padding-left:25px;
+    margin-top: 60px;
+    @include span-columns(3.5);
+    @include shift(.5);
+  }
+  h2{
+    @include slab(700, 3.6em, white);
+    letter-spacing: 2;
+    line-height: 1em;
+    @include no-space;
+  }
+  .description{
+    @include span-columns(7);
+    margin-top: 60px;
+    padding-bottom:80px;
+  }
+  .subtitle{
+    color:white;
+  }
+  p{
+    @include roboto(300, 2.4em, white);
+    line-height: 1.5em;
+    @include no-space;
+  }
+  span{
+    @include roboto(700, 1em, white);
+  }
+  a{
+    @include slab(700, 1em, white);
+    border-bottom: 3px solid #8cc8df;
+    text-decoration: none;
+  }
+  a:hover{
+    color:#8cc8df;
+    border-bottom: 2px solid #8cc8df;
+  }
+  br{
+    line-height: 3em;
+  }
+}
 
-
-
-
+#featured-projects{
+  padding-top: 80px;
+  .title{
+    border-left: 1px solid #182a33;
+    padding-left:25px;
+    //margin-top: 60px;
+    @include span-columns(11.5);
+    @include shift(.5);
+  }
+  h2{
+    @include slab(700, 3.6em, blacky);
+    letter-spacing: 2;
+    line-height: 1em;
+    @include no-space;
+  }
+}
 
 
 /* ==========================================================================

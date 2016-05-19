@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700);
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -189,58 +191,182 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-body:before {
-  background-image: -webkit-linear-gradient(left, transparent 0, #000 0, #000 8.2618159862%, transparent 8.2618159862%, transparent 8.3398349103%, #000 8.3398349103%, #000 16.6016508965%, transparent 16.6016508965%, transparent 16.6796698207%, #000 16.6796698207%, #000 24.9414858069%, transparent 24.9414858069%, transparent 25.019504731%, #000 25.019504731%, #000 33.2813207172%, transparent 33.2813207172%, transparent 33.3593396414%, #000 33.3593396414%, #000 41.6211556276%, transparent 41.6211556276%, transparent 41.6991745517%, #000 41.6991745517%, #000 49.9609905379%, transparent 49.9609905379%, transparent 50.0390094621%, #000 50.0390094621%, #000 58.3008254483%, transparent 58.3008254483%, transparent 58.3788443724%, #000 58.3788443724%, #000 66.6406603586%, transparent 66.6406603586%, transparent 66.7186792828%, #000 66.7186792828%, #000 74.980495269%, transparent 74.980495269%, transparent 75.0585141931%, #000 75.0585141931%, #000 83.3203301793%, transparent 83.3203301793%, transparent 83.3983491035%, #000 83.3983491035%, #000 91.6601650897%, transparent 91.6601650897%, transparent 91.7381840138%, #000 91.7381840138%, #000 100%, transparent 100%);
-  background-image: -webkit-linear-gradient(right, transparent 0, #000 0, #000 8.2618159862%, transparent 8.2618159862%, transparent 8.3398349103%, #000 8.3398349103%, #000 16.6016508965%, transparent 16.6016508965%, transparent 16.6796698207%, #000 16.6796698207%, #000 24.9414858069%, transparent 24.9414858069%, transparent 25.019504731%, #000 25.019504731%, #000 33.2813207172%, transparent 33.2813207172%, transparent 33.3593396414%, #000 33.3593396414%, #000 41.6211556276%, transparent 41.6211556276%, transparent 41.6991745517%, #000 41.6991745517%, #000 49.9609905379%, transparent 49.9609905379%, transparent 50.0390094621%, #000 50.0390094621%, #000 58.3008254483%, transparent 58.3008254483%, transparent 58.3788443724%, #000 58.3788443724%, #000 66.6406603586%, transparent 66.6406603586%, transparent 66.7186792828%, #000 66.7186792828%, #000 74.980495269%, transparent 74.980495269%, transparent 75.0585141931%, #000 75.0585141931%, #000 83.3203301793%, transparent 83.3203301793%, transparent 83.3983491035%, #000 83.3983491035%, #000 91.6601650897%, transparent 91.6601650897%, transparent 91.7381840138%, #000 91.7381840138%, #000 100%, transparent 100%);
-  background-image: linear-gradient(to left, transparent 0, #000 0, #000 8.2618159862%, transparent 8.2618159862%, transparent 8.3398349103%, #000 8.3398349103%, #000 16.6016508965%, transparent 16.6016508965%, transparent 16.6796698207%, #000 16.6796698207%, #000 24.9414858069%, transparent 24.9414858069%, transparent 25.019504731%, #000 25.019504731%, #000 33.2813207172%, transparent 33.2813207172%, transparent 33.3593396414%, #000 33.3593396414%, #000 41.6211556276%, transparent 41.6211556276%, transparent 41.6991745517%, #000 41.6991745517%, #000 49.9609905379%, transparent 49.9609905379%, transparent 50.0390094621%, #000 50.0390094621%, #000 58.3008254483%, transparent 58.3008254483%, transparent 58.3788443724%, #000 58.3788443724%, #000 66.6406603586%, transparent 66.6406603586%, transparent 66.7186792828%, #000 66.7186792828%, #000 74.980495269%, transparent 74.980495269%, transparent 75.0585141931%, #000 75.0585141931%, #000 83.3203301793%, transparent 83.3203301793%, transparent 83.3983491035%, #000 83.3983491035%, #000 91.6601650897%, transparent 91.6601650897%, transparent 91.7381840138%, #000 91.7381840138%, #000 100%, transparent 100%);
-  content: "";
-  display: inline-block;
-  height: 100%;
-  left: 0;
-  margin: 0 auto;
-  max-width: 1440px;
-  opacity: 0.1;
-  pointer-events: none;
-  position: fixed;
-  right: 0;
-  width: 100%;
-  z-index: 9999; }
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-.class {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s; }
-  .class::after {
-    clear: both;
-    content: "";
-    display: table; }
+html {
+  font-size: 100%; }
 
-.contenidor {
-  max-width: 1440px;
+body {
+  font-size: 10px; }
+
+.container {
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto; }
-  .contenidor::after {
+  .container::after {
     clear: both;
     content: "";
     display: table; }
 
-.bloc_1 {
-  background: red;
-  height: 200px;
-  margin-bottom: 20px; }
+.full-width {
+  width: 100%;
+  background-color: #00AAD0; }
 
-.bloc_2 {
-  background: yellow;
-  height: 300px;
+header {
+  height: 130px; }
+
+.logo {
+  border-left: 1px solid #182a33;
+  padding-left: 25px;
+  margin-top: 40px;
   float: left;
   display: block;
   margin-right: 0.0780189242%;
-  width: 49.9609905379%;
-  margin-left: 33.3593396414%; }
-  .bloc_2:last-child {
+  width: 41.6211556276%;
+  margin-left: 4.1699174552%; }
+  .logo:last-child {
     margin-right: 0; }
+
+h1 {
+  font-family: 'Roboto Slab', Times, serif;
+  font-weight: 700;
+  font-size: 3.6em;
+  color: #182a33;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #182a33;
+  letter-spacing: 2;
+  line-height: 1em;
+  margin: 0;
+  padding: 0; }
+
+.subtitle {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+  color: #182a33;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #182a33;
+  line-height: 2em;
+  margin: 0;
+  padding: 0; }
+
+.social-media {
+  margin: 0;
+  padding: 0;
+  float: left;
+  display: block;
+  margin-right: 0.0780189242%;
+  width: 49.9609905379%; }
+  .social-media:last-child {
+    margin-right: 0; }
+  .social-media ul {
+    float: right;
+    margin-top: 40px; }
+  .social-media li {
+    display: inline;
+    list-style-type: none;
+    margin-left: 20px; }
+  .social-media a {
+    text-decoration: none; }
+
+.diagonal-top {
+  height: 60px;
+  background-color: #fff;
+  background-image: -webkit-linear-gradient(left top, #fff 50%, #00AAD0 50.5%);
+  background-image: -webkit-linear-gradient(left top,#fff 50%, #00AAD0 50.5%);
+  background-image: linear-gradient(to right bottom,#fff 50%, #00AAD0 50.5%); }
+
+#about .title {
+  border-left: 1px solid white;
+  padding-left: 25px;
+  margin-top: 60px;
+  float: left;
+  display: block;
+  margin-right: 0.0780189242%;
+  width: 29.1114032621%;
+  margin-left: 4.1699174552%; }
+  #about .title:last-child {
+    margin-right: 0; }
+#about h2 {
+  font-family: 'Roboto Slab', Times, serif;
+  font-weight: 700;
+  font-size: 3.6em;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 2;
+  line-height: 1em;
+  margin: 0;
+  padding: 0; }
+#about .description {
+  float: left;
+  display: block;
+  margin-right: 0.0780189242%;
+  width: 58.3008254483%;
+  margin-top: 60px;
+  padding-bottom: 80px; }
+  #about .description:last-child {
+    margin-right: 0; }
+#about .subtitle {
+  color: white; }
+#about p {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 2.4em;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0; }
+#about span {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+#about a {
+  font-family: 'Roboto Slab', Times, serif;
+  font-weight: 700;
+  font-size: 1em;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border-bottom: 3px solid #8cc8df;
+  text-decoration: none; }
+#about a:hover {
+  color: #8cc8df;
+  border-bottom: 2px solid #8cc8df; }
+#about br {
+  line-height: 3em; }
+
+#featured-projects {
+  padding-top: 80px; }
+  #featured-projects .title {
+    border-left: 1px solid #182a33;
+    padding-left: 25px;
+    float: left;
+    display: block;
+    margin-right: 0.0780189242%;
+    width: 95.8300825448%;
+    margin-left: 4.1699174552%; }
+    #featured-projects .title:last-child {
+      margin-right: 0; }
+  #featured-projects h2 {
+    font-family: 'Roboto Slab', Times, serif;
+    font-weight: 700;
+    font-size: 3.6em;
+    color: blacky;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 2;
+    line-height: 1em;
+    margin: 0;
+    padding: 0; }
 
 /* ==========================================================================
    Media Queries
