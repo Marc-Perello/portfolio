@@ -49,7 +49,7 @@ header{
   @include shift(1);
 
   // Media Queries
-  @include media($l) {
+  @include media($m) {
             padding-left:25px;
             margin-top: 40px;
             @include span-columns(5.5);
@@ -67,7 +67,7 @@ h1{
   @include no-space;
 }
 
-.subtitle{
+.subtitle-dark{
   @include roboto(400, 2em);
   color:$blacky;
   line-height: 2em;
@@ -79,9 +79,10 @@ h1{
     @include shift(1);
     //@include no-space;
         // Media Queries
-        @include media($l) {
-                @include span-columns(5.5);
-                @include shift(0);
+
+        @include media($m) {
+                @include span-columns(3);
+                @include shift(2.5);
                 }
     }
 
@@ -89,7 +90,7 @@ h1{
     padding-left: 15px;
     padding-bottom: 25px;
           // Media Queries
-          @include media($l) {
+          @include media($m) {
             margin-top: 40px;
             float:right;
             }
@@ -129,40 +130,58 @@ h1{
     margin-top: 60px;
     @include span-columns(11);
     @include shift(1);
-    
     // Media Queries
-      //@include media($m) {
-               
-               // }
+      @include media($m) {
+               @include span-columns(3.5);
+                @include shift(1);
+                }
         @include media($l) {
-                @include span-columns(3.5);
+                @include span-columns(3);
                 @include shift(.5);
                 }
   }
-
-#about {
-  
-  h2{
+h2{
     @include slab(700, 3.6em);
     color:white;
     letter-spacing: 2;
     line-height: 1em;
     @include no-space;
-  }
-  .description{
-    @include span-columns(7);
+}
+.subtitle{
+    @include roboto(400, 2em);
+    color:white;
+    line-height: 2em;
+    @include no-space;
+}
+.description{
+    @include span-columns(10.5);
+    @include shift(1);
     margin-top: 60px;
     padding-bottom:80px;
-  }
-  .subtitle{
-    color:white;
-  }
-  p{
+    // Media Queries
+      @include media($m) {
+               @include span-columns(6);
+               @include shift(.5);
+               }
+      @include media($l) {
+                @include span-columns(7);
+                @include shift(0);
+                }
+}
+
+p{
     @include roboto(300, 2.4em);
     color:white;
     line-height: 1.5em;
     @include no-space;
   }
+
+#about {
+  
+  
+  
+
+  
   span{
     @include roboto(700, 1em);
     color:white;

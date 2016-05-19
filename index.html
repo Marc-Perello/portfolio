@@ -17,22 +17,22 @@
       <header>
           <div class="logo">
             <h1 id="logo">Marc Perelló</h1>
-            <div class="subtitle">UI / UX Designer</div>
+            <div class="subtitle-dark">UI / UX Designer</div>
           </div>
           <div class="social-media">
             <ul>
               <li>
-                <a href="https://dribbble.com/marcperello">
+                <a href="https://dribbble.com/marcperello" target="blank">
                   <img src="img/dribbble.svg" alt="Marc Perelló Dribbble Profile">
                 </a>
               </li>
               <li>
-                <a href="//es.linkedin.com/in/marcperello">
+                <a href="https://es.linkedin.com/in/marcperello" target="blank">
                   <img src="img/linkedin.svg" alt="Marc Perelló Linkedin Profile">
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/marcus_bcn">
+                <a href="https://twitter.com/marcus_bcn" target="blank">
                   <img src="img/twitter.svg" alt="Marc Perelló Twitter Profile">
                 </a>
               </li>
@@ -56,7 +56,7 @@
           <div class="subtitle">Some lines about me</div>
         </div>
         <div class="description">
-            <p>I’m a <span>UX / UI Designer</span> currently working at <a href="http://www.lola-mullenlowe.com">Lola-MullenLowe</a>, and living in <span>Barcelona</span>.<br>I started years ago as a <span>graphic designer</span> and a <span>photographer</span> for print media. With the adveniment of the digital media I focused my energy on the design of the new <span>digital products</span>.<br>Nowadays I create <span>astethic</span> and intuitive <span>user interfaces</span>. The making of <span>flows</span>, <span>wireframes</span>, <span>visual designs</span>, <span>interactions</span> and <span>documentation</span> are part of my everyday. Check out some of <a href="">my projects below</a>.
+            <p>I’m a <span>UX / UI Designer</span> currently working at <a href="http://www.lola-mullenlowe.com" target="blank">Lola-MullenLowe</a>, and living in <span>Barcelona</span>.<br>I started years ago as a <span>graphic designer</span> and a <span>photographer</span> for print media. With the adveniment of the digital media I focused my energy on the design of the new <span>digital products</span>.<br>Nowadays I create <span>astethic</span> and intuitive <span>user interfaces</span>. The making of <span>flows</span>, <span>wireframes</span>, <span>visual designs</span>, <span>interactions</span> and <span>documentation</span> are part of my everyday. Check out some of <a href="javascript:void(0)" id="featured-projects-link">my projects below</a>.
             </p>
         </div>
     </div>  
@@ -77,8 +77,22 @@
   </div>
 </section>
 
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+   
+    <script type="text/javascript">
+  $(document).ready(function(){
+
+    $("#featured-projects-link").click(function() {
+    $('html, body').animate({
+       scrollTop: $("#featured-projects").offset().top
+      }, 1200);
+    });
+
+  });
+</script>
   </body>
 </html>
