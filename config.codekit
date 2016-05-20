@@ -11,17 +11,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/favicon.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1064,
-		"inputAbbreviatedPath": "\/favicon.png",
-		"outputAbbreviatedPath": "\/favicon.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/img\/porfolio_bg.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -29,6 +18,17 @@
 		"initialSize": 941534,
 		"inputAbbreviatedPath": "\/img\/porfolio_bg.jpg",
 		"outputAbbreviatedPath": "\/img\/porfolio_bg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/seat_com_L.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 170365,
+		"inputAbbreviatedPath": "\/img\/seat_com_L.png",
+		"outputAbbreviatedPath": "\/img\/seat_com_L.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
