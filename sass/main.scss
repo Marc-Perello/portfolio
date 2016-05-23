@@ -195,10 +195,11 @@ h2{
 /* ==========================================================================
    Featured Projects
    ========================================================================== */
+
 .title-projects{
     border-left: 1px solid $blacky;
     padding-left:25px;
-    margin-top: 100px;
+    margin-top: 60px;
     @include span-columns(11);
     @include shift(1);
     // Media Queries
@@ -214,27 +215,43 @@ h2{
 .color-blacky{
   color: $blacky;
 }
-.project{
-   @include span-columns(11);
-   @include shift(1);
+.project {
    @include no-space;
+   @include media($l) {
+                @include span-columns(9.5);
+                @include shift(1);
+                }
+   margin-top: 50px;
+}
+
+.project li{
+  list-style-type: none;
 }
 .project-image{
-  @include span-columns(4);
-  @include shift(1);
+  background-color: black;
   @include no-space;
-  position:relative;
-  z-index: 2525;
+  @include media($l) {
+                @include span-columns(4.5 of 10);
+                }
+}
+.project-image img{
+  @include no-space;
+  z-index: 999;
+  float:right;
 }
 .project-text{
-  @include span-columns(5.5);
-   @include no-space;
+  @include no-space;
+  @include media($l) {
+                @include span-columns(5.5 of 10);
+                }
 }
 .eyebrow{
   @include roboto(400, 2em);
   color:$blacky;
   line-height: auto;
   @include no-space;
+  margin-left: 20px;
+  
 }
 .a-blue{
   @include slab(700, 1em);
@@ -247,8 +264,12 @@ h2{
   @include slab(700, 3.6em);
   line-height: auto;
   @include no-space;
-  margin-top: -5px;
+  margin-top: -25px;
+  margin-left: 20px;
 }
+.project-name p{
+  @include no-space;
+  }
 .a-title{
   color:$blacky;
   text-decoration: none;
@@ -259,23 +280,33 @@ h2{
   line-height: 1.5em;
   @include no-space;
   margin-top:40px;
-  margin-left:70px;
+  margin-left:20px;
   margin-right: 40px;
   padding-top:40px;
 }
 .bg-introduction{
   height:240px;
+  margin-right: 52px;
   background-color:$lightgray;
   position:relative;
   z-index: 1
 }
 .cta{
-
+  height:36pt;
+  border: $blaucel solid 2px;
+  float:right;
+  position:relative;
+  padding-top: 5pt;
+  padding-left: 10pt;
+  padding-right: 10pt;
 }
 .a-project{
+  @include slab(700, 2em);
+  color:$blacky;
+  text-decoration: none;
+  @include no-space;
 
 }
-
 /* ==========================================================================
    Media Queries
    ========================================================================== */
