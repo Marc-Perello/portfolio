@@ -218,26 +218,43 @@ h2{
 .project {
    @include no-space;
    @include media($l) {
-                @include span-columns(9.5);
+                @include span-columns(10);
                 @include shift(1);
                 }
-   margin-top: 50px;
+}
+.project_container{
+  padding-top: 75px;
+  border-bottom: 1px solid $lightgray;
 }
 
 .project li{
   list-style-type: none;
+  @include clearfix;
 }
 .project-image{
-  background-color: black;
   @include no-space;
   @include media($l) {
-                @include span-columns(4.5 of 10);
+                @include span-columns(4 of 10);
                 }
 }
-.project-image img{
-  @include no-space;
+.marc-foto{
+  height:490px;
+  @include no-space;  
+  position: relative;
+}
+.img1{
   z-index: 999;
-  float:right;
+  box-shadow: 0 10px 15px 0 rgba(0, 71, 92, 0.3), 0 6px 20px 0 rgba(0, 71, 92, 0.3);
+  position: absolute;
+  top: 0;
+  right:0;
+}
+.img2{
+  margin-top: 20px;
+  box-shadow: 0 10px 15px 0 rgba(0, 71, 92, 0.3), 0 6px 20px 0 rgba(0, 71, 92, 0.3);
+  position: absolute;
+  top: 0;
+  right:160px;
 }
 .project-text{
   @include no-space;
@@ -248,10 +265,13 @@ h2{
 .eyebrow{
   @include roboto(400, 2em);
   color:$blacky;
-  line-height: auto;
+  line-height: 1;
   @include no-space;
-  margin-left: 20px;
-  
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.eyebrow p{
+  @include no-space;
 }
 .a-blue{
   @include slab(700, 1em);
@@ -262,10 +282,10 @@ h2{
 }
 .project-name{
   @include slab(700, 3.6em);
-  line-height: auto;
+  line-height: 1;
   @include no-space;
-  margin-top: -25px;
-  margin-left: 20px;
+  margin-top: 5px;
+  margin-left: 50px;
 }
 .project-name p{
   @include no-space;
@@ -279,13 +299,15 @@ h2{
   color:$blacky;
   line-height: 1.5em;
   @include no-space;
-  margin-top:40px;
-  margin-left:20px;
+  margin-left:50px;
   margin-right: 40px;
   padding-top:40px;
 }
 .bg-introduction{
+  
+  @include no-space;
   height:240px;
+  margin-top:35px;
   margin-right: 52px;
   background-color:$lightgray;
   position:relative;
