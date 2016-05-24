@@ -22,6 +22,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/other_1_L.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1504,
+		"inputAbbreviatedPath": "\/img\/other_1_L.png",
+		"outputAbbreviatedPath": "\/img\/other_1_L.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/porfolio_bg.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
