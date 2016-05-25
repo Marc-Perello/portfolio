@@ -157,7 +157,7 @@ h2{
     @include span-columns(10);
     @include shift(1);
     margin-top: 60px;
-    padding-bottom:80px;
+    padding-bottom:100px;
     // Media Queries
       @include media($m) {
                @include span-columns(6.5);
@@ -171,7 +171,7 @@ h2{
 .p-description{
     @include roboto(300, 2.4em);
     color:white;
-    line-height: 1.5em;
+    line-height: 1.4em;
     @include no-space;
   }
 .span-description {
@@ -199,7 +199,7 @@ h2{
 .title-projects{
     border-left: 1px solid $blacky;
     padding-left:25px;
-    margin-top: 60px;
+    margin-top: 100px;
     @include span-columns(11);
     @include shift(1);
     // Media Queries
@@ -358,8 +358,38 @@ h2{
   @include span-columns(1 of 3);
   @include no-space;
 }
-
-
+h3{
+  @include slab(700, 2.4em);
+  color: $blacky;
+  text-align: center;
+}
+.p-white{
+  @include roboto(300, 2em);
+  color:white;
+  line-height: 1.5em;
+  text-align: center;
+  @include no-space;
+  padding-left:20px;
+  padding-right:20px;
+  //margin-right: 40px;
+  //padding-top:40px;
+}
+.cta-footer{
+  height:36pt;
+  border: white solid 2px;
+  @include span-columns(2);
+  @include shift(5);
+  padding-top: 5pt;
+  padding-left: 10pt;
+  padding-right: 10pt;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.cta-footer a {
+  color:white;
+  text-align: center;
+  padding-left:45px;
+}
 .diagonal-bottom{
   height: 20px;
   @include linear-gradient(to right bottom,$blaucel 50.5%, #fff 50%);
