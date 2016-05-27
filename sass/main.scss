@@ -361,18 +361,22 @@ h2{
 h3{
   @include slab(700, 2.4em);
   color: $blacky;
+  @include no-space;
   text-align: center;
+
+  span{
+    color: $blaufosc;  }
 }
+
 .p-white{
-  @include roboto(300, 2em);
+  @include roboto(400, 2em);
   color:white;
   line-height: 1.5em;
   text-align: center;
   @include no-space;
-  padding-left:20px;
-  padding-right:20px;
-  //margin-right: 40px;
-  //padding-top:40px;
+  padding-left:25px;
+  padding-right:25px;
+  margin-top: 4px;
 }
 .cta-footer{
   height:36pt;
@@ -382,8 +386,8 @@ h3{
   padding-top: 5pt;
   padding-left: 10pt;
   padding-right: 10pt;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-top: 70px;
+  margin-bottom: 50px;
 }
 .cta-footer a {
   color:white;
@@ -404,6 +408,16 @@ h3{
 /* ==========================================================================
    Footer
    ========================================================================== */
+   footer{
+    margin-top:50px;
+   }
+
+   .subtitle-footer{
+      @include slab(700, 2em);
+      color:$blacky;
+      line-height: 2em;
+      @include no-space;
+   }
    .social-media-footer{
     @include span-columns(11);
     @include shift(1);
@@ -411,19 +425,30 @@ h3{
         // Media Queries
 
         @include media($m) {
-                @include span-columns(11.5);
+                @include span-columns(3.5);
                 @include shift(.5);
                 }
     }
+    .madeinbcn {
+      @include span-columns(4);
+      @include shift(3);
+      p{
+        @include no-space;
+        text-align: right;
+        margin-bottom: 10px;
+      }
+
+    }
 
     .social-media-footer ul{
-    padding-left: 15px;
-    padding-bottom: 25px;
-          // Media Queries
-          @include media($m) {
-            margin-top: 40px;
-            float:left;
-            }
+          padding-left: 15px;
+          padding-bottom: 25px;
+                // Media Queries
+                @include media($m) {
+                  @include no-space;
+                  margin-top: 10px;
+                  margin-bottom: 50px;
+                  }
     }
    .social-media-footer li{
       display: inline;
@@ -436,6 +461,11 @@ h3{
     .social-media-footer a{
       opacity:.3;
       text-decoration: none;
+    }
+    .copyright {
+      @include roboto(400, 1.4em);
+      color:$midgray;
+      @include no-space;
     }
 
 
