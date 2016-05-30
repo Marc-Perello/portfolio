@@ -11,6 +11,28 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/img\/carconfig_1_L.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 36690,
+		"inputAbbreviatedPath": "\/img\/carconfig_1_L.png",
+		"outputAbbreviatedPath": "\/img\/carconfig_1_L.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/carconfig_2_L.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 36818,
+		"inputAbbreviatedPath": "\/img\/carconfig_2_L.png",
+		"outputAbbreviatedPath": "\/img\/carconfig_2_L.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/digital_legends_L.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -33,6 +55,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/lola_1_L.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 77214,
+		"inputAbbreviatedPath": "\/img\/lola_1_L.png",
+		"outputAbbreviatedPath": "\/img\/lola_1_L.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/lola_2_L.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 71102,
+		"inputAbbreviatedPath": "\/img\/lola_2_L.png",
+		"outputAbbreviatedPath": "\/img\/lola_2_L.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/manuals_1_L.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -51,6 +95,17 @@
 		"initialSize": 118023,
 		"inputAbbreviatedPath": "\/img\/manuals_2_L.png",
 		"outputAbbreviatedPath": "\/img\/manuals_2_L.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/manuals_L.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 130147,
+		"inputAbbreviatedPath": "\/img\/manuals_L.png",
+		"outputAbbreviatedPath": "\/img\/manuals_L.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -88,6 +143,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/Project 2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 86841,
+		"inputAbbreviatedPath": "\/img\/Project 2.png",
+		"outputAbbreviatedPath": "\/img\/Project 2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/seat_com_1_L.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -117,6 +183,28 @@
 		"initialSize": 170365,
 		"inputAbbreviatedPath": "\/img\/seat_com_L.png",
 		"outputAbbreviatedPath": "\/img\/seat_com_L.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/webshop_1_L.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 77817,
+		"inputAbbreviatedPath": "\/img\/webshop_1_L.png",
+		"outputAbbreviatedPath": "\/img\/webshop_1_L.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/webshop_2_L.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 54047,
+		"inputAbbreviatedPath": "\/img\/webshop_2_L.png",
+		"outputAbbreviatedPath": "\/img\/webshop_2_L.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

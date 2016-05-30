@@ -199,7 +199,7 @@ h2{
 .title-projects{
     border-left: 1px solid $blacky;
     padding-left:25px;
-    margin-top: 100px;
+    margin-top: 60px;
     @include span-columns(11);
     @include shift(1);
     // Media Queries
@@ -217,6 +217,9 @@ h2{
 }
 .project {
    @include no-space;
+   @include span-columns(10);
+   @include shift(1);
+                
    @include media($l) {
                 @include span-columns(10);
                 @include shift(1);
@@ -357,6 +360,11 @@ h2{
 .side-project{
   @include span-columns(1 of 3);
   @include no-space;
+
+  img{
+    @include no-space;
+        max-width: 100%;
+  }
 }
 h3{
   @include slab(700, 2.4em);
