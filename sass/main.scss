@@ -126,12 +126,13 @@ h1{
    ========================================================================== */
 .title{
     border-left: 1px solid white;
-    padding-left:25px;
+    padding-left:15px;
     margin-top: 60px;
     @include span-columns(11);
     @include shift(1);
     // Media Queries
       @include media($m) {
+               padding-left:25px;
                @include span-columns(3.5);
                 @include shift(.5);
                 }
@@ -198,13 +199,14 @@ h2{
 
 .title-projects{
     border-left: 1px solid $blacky;
-    padding-left:25px;
+    padding-left:15px;
     margin-top: 60px;
     @include span-columns(11);
     @include shift(1);
     // Media Queries
       @include media($m) {
-               @include span-columns(11.5);
+                padding-left:25px;
+                @include span-columns(11.5);
                 @include shift(.5);
                 }
         @include media($l) {
@@ -217,13 +219,13 @@ h2{
 }
 .project {
    @include no-space;
-   @include span-columns(10);
-   @include shift(1);
+   @include span-columns(12);
+   //@include shift(1);
                 
-   @include media($l) {
-                @include span-columns(10);
-                @include shift(1);
-                }
+    @include media($m) {
+                  @include span-columns(10);
+                  @include shift(1);
+                  }
 }
 .project_container{
   padding-top: 75px;
@@ -270,8 +272,11 @@ h2{
   color:$blacky;
   line-height: 1;
   @include no-space;
-  margin-top: 20px;
-  margin-left: 50px;
+   margin-left: 50px;
+    @include media($l) {
+            margin-top: 20px;
+            margin-left: 50px;
+                  }
 }
 .eyebrow p{
   @include no-space;
@@ -308,12 +313,14 @@ h2{
 }
 .bg-introduction{
   @include no-space;
-  height:240px;
-  margin-top:35px;
-  margin-right: 52px;
   background-color:$lightgray;
   position:relative;
-  z-index: 1
+  z-index: 1;
+    @include media($l) {
+      height:240px;
+      margin-top:35px;
+      margin-right: 52px;
+      }
 }
 .cta{
   height:36pt;
