@@ -403,18 +403,15 @@ h2{
    ========================================================================== */
 .title-other{
     border-left: 1px solid white;
-    padding-left:25px;
+    padding-left:15px;
     margin-top: 60px;
     @include span-columns(11);
     @include shift(1);
     // Media Queries
       @include media($m) {
                @include span-columns(11.5);
-                @include shift(.5);
-                }
-        @include media($l) {
-                @include span-columns(11.5);
-                @include shift(.5);
+               @include shift(.5);
+               padding-left:25px;
                 }
   }
 
@@ -426,8 +423,13 @@ h2{
    margin-top: 75px;
 }
 .side-project{
-  @include span-columns(1 of 3);
+  @include span-columns(11);
   @include no-space;
+  // Media Queries
+      @include media($m) {
+            @include span-columns(1 of 3);
+            @include no-space;
+                }
 
   img{
     @include no-space;
