@@ -396,6 +396,7 @@ h2{
   color:$blacky;
   text-decoration: none;
   @include no-space;
+  text-align: center;
 
 }
 /* ==========================================================================
@@ -423,7 +424,8 @@ h2{
    margin-top: 75px;
 }
 .side-project{
-  @include span-columns(11);
+  @include span-columns(10);
+  @include shift(1);
   @include no-space;
   // Media Queries
       @include media($m) {
@@ -457,21 +459,26 @@ h3{
   margin-top: 4px;
 }
 .cta-footer{
+  width: 100%;
   height:36pt;
+  display:block;
+  @include slab(700, 2em);
+  text-decoration: none;
   border: white solid 2px;
-  @include span-columns(2);
-  @include shift(5);
+  @include span-columns(8);
+  @include shift(2);
   padding-top: 5pt;
-  padding-left: 10pt;
-  padding-right: 10pt;
+  text-align: center;
+  color: white;
   margin-top: 70px;
   margin-bottom: 50px;
+  // Media Queries
+      @include media($m) {
+            @include span-columns(2);
+            @include shift(5);
+                }
 }
-.cta-footer a {
-  color:white;
-  text-align: center;
-  padding-left:45px;
-}
+
 .diagonal-bottom{
   height: 20px;
   @include linear-gradient(to right bottom,$blaucel 50.5%, #fff 50%);
@@ -486,64 +493,98 @@ h3{
 /* ==========================================================================
    Footer
    ========================================================================== */
-   footer{
-    margin-top:50px;
-   }
+footer{
+margin-top:50px;
+}
+.social-media-footer{
+@include span-columns(12);
+// @include shift(1);
+//@include no-space;
+    // Media Queries
 
-   .subtitle-footer{
-      @include slab(700, 2em);
-      color:$blacky;
-      line-height: 2em;
-      @include no-space;
-   }
-   .social-media-footer{
-    @include span-columns(11);
-    @include shift(1);
-    //@include no-space;
-        // Media Queries
+    @include media($m) {
+            @include span-columns(3.5);
+            @include shift(.5);
+            }
+}
+.subtitle-footer{
+  @include slab(700, 2em);
+  color:$blacky;
+  line-height: 2em;
+  text-align: center;
+  @include no-space;
+  @include media($m) {
+            text-align: left;
+            }
+}
+.subtitle-right{
+  @include slab(700, 1.6em);
+  color:$blacky;
+  line-height: 2em;
+  text-align: center;
+  @include no-space;
+  @include media($m) {
+            @include slab(700, 2em);
+            text-align: right;
+            }
+}
+.madeinbcn {
+  margin-top: 20px;
+  @include span-columns(10);
+  @include shift(1);
+  @include media($m) {
+        @include span-columns(4);
+        @include shift(3);
+        margin-top: 0px;
+            }
+}
 
-        @include media($m) {
-                @include span-columns(3.5);
-                @include shift(.5);
-                }
-    }
-    .madeinbcn {
-      @include span-columns(4);
-      @include shift(3);
-      p{
-        @include no-space;
-        text-align: right;
-        margin-bottom: 10px;
-      }
-
-    }
-
-    .social-media-footer ul{
-          padding-left: 15px;
-          padding-bottom: 25px;
-                // Media Queries
-                @include media($m) {
-                  @include no-space;
-                  margin-top: 10px;
-                  margin-bottom: 50px;
-                  }
-    }
-   .social-media-footer li{
-      display: inline;
-      list-style-type: none;
-      margin-left: 20px; 
-    }
-    .social-media-footer li:first-child {
-    margin:0;
-    }
-    .social-media-footer a{
-      opacity:.3;
-      text-decoration: none;
-    }
-    .copyright {
-      @include roboto(400, 1.4em);
-      color:$midgray;
-      @include no-space;
+.table{
+  display: table;   /* Allow the centering to work */
+  margin: 0 auto;
+  // Media Queries
+            @include media($m) {
+              margin-left: 0px;
+              }
+}
+.social-media-footer ul{
+      width: 100%;
+      display:block;
+      margin: 20px auto;
+      padding-left: 0px;
+      padding-bottom: 25px;
+            // Media Queries
+            @include media($m) {
+              @include no-space;
+              margin-top: 10px;
+              margin-bottom: 50px;
+              }
+}
+.social-media-footer li{
+  display: inline;
+  float: left;
+  list-style-type: none;
+  margin-left: 20px; 
+}
+.social-media-footer li:first-child {
+margin:0;
+}
+.social-media-footer a{
+  opacity:.3;
+  text-decoration: none;
+}
+.copyright {
+  @include roboto(400, 1.4em);
+  color:$midgray;
+  @include no-space;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 20px;
+      // Media Queries
+            @include media($m) {
+              margin-bottom: 20px;
+              text-align: right;
+              }
     }
 
 
