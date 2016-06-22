@@ -371,34 +371,26 @@ h2{
       margin-right: 52px;
       }
 }
-.cta{
-  height:36pt;
-  border: $blaucel solid 2px;
-  background-color: white;
-  @include no-space;
-  margin: -25px auto 80px auto;
-  padding-top: 5pt;
-  max-width: 200px;
+.cta-ok{
+  @include slab(700, 2em);
+  text-decoration: none;
   text-align: center;
+  color:$blacky;
+  background-color: white;
+  padding: 5pt 10pt 7pt 10pt;
+  border: $blaucel solid 2px;
+  max-width: 200px;
+  display:block;
+  margin:-25px auto 80px auto;
   z-index: 99999;
   position:relative;
       @include media($l) {
         float:right;
         position:relative;
         margin-top: 0px;
-        padding-top: 5pt;
-        padding-left: 10pt;
-        padding-right: 10pt;
       }
 }
-.a-project{
-  @include slab(700, 2em);
-  color:$blacky;
-  text-decoration: none;
-  @include no-space;
-  text-align: center;
 
-}
 /* ==========================================================================
    Other Projects
    ========================================================================== */
@@ -494,7 +486,7 @@ h3{
    Footer
    ========================================================================== */
 footer{
-margin-top:50px;
+margin-top:30px;
 }
 .social-media-footer{
 @include span-columns(12);
@@ -529,7 +521,7 @@ margin-top:50px;
             }
 }
 .madeinbcn {
-  margin-top: 20px;
+  margin-top: 0px;
   @include span-columns(10);
   @include shift(1);
   @include media($m) {
