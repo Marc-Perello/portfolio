@@ -21,6 +21,23 @@ $midgray:#b9bfc1;
 
 
 
+@keyframes Gradient { 
+    0%{background-position: 0% 0% }
+    50%{background-position: 100% 100% }
+    100%{background-position: 0% 0% }
+}
+
+
+@mixin animated-gradient {
+	// background: linear-gradient(316deg, #00586b, #00aad0);
+	background: linear-gradient(180deg, $blaucel, darken($blaucel, 5%) );
+	background-size: 400% 400%;
+	animation: Gradient 12s ease infinite;
+	
+}
+
+
+
 
 @mixin smoothy{
   -webkit-font-smoothing: antialiased;
