@@ -46,7 +46,7 @@ header{
 .logo{
   border-left: 1px solid $blacky;
   padding-left:15px;
-  margin-top: 40px;
+  margin-top: 25px;
   @include span-columns(11);
   @include shift(1);
     // Media Queries
@@ -84,9 +84,10 @@ h1{
 }
 .social-media ul{
   padding-left: 15px;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
       // Media Queries
       @include media($m) {
+        padding-bottom: 25px;
         margin-top: 40px;
         float:right;
         }
@@ -105,7 +106,7 @@ h1{
   text-decoration: none;
 }
 .diagonal{
-  height: 20px;
+  height: 25px;
   @include linear-gradient(to right bottom, #fff 50%, $blaucel 50.5%);
     // Media Queries
     @include media($m) {
@@ -127,11 +128,12 @@ h1{
 .title{
   border-left: 1px solid white;
   padding-left:15px;
-  margin-top: 60px;
+  margin-top: 45px;
   @include span-columns(11);
   @include shift(1);
     // Media Queries
       @include media($m) {
+               margin-top: 60px;
                padding-left:25px;
                @include span-columns(3.5);
                 @include shift(.5);
@@ -158,11 +160,13 @@ h2{
 .description{
   @include span-columns(10);
   @include shift(1);
-  margin-top: 60px;
-  padding-bottom:100px;
+  margin-top: 35px;
+  padding-bottom:80px;
     // Media Queries
     @include media($m) {
-      @include span-columns(6.5);
+      margin-top: 60px;
+      padding-bottom:100px;
+      @include span-columns(6.8);
       @include shift(.5);
     }
     @include media($l) {
@@ -202,11 +206,12 @@ h2{
 .title-projects{
   border-left: 1px solid $blacky;
   padding-left:15px;
-  margin-top: 60px;
+  margin-top: 40px;
   @include span-columns(11);
   @include shift(1);
   // Media Queries
     @include media($m) {
+              margin-top: 60px;
               padding-left:25px;
               @include span-columns(11.5);
               @include shift(.5);
@@ -225,14 +230,20 @@ h2{
 @include span-columns(12);  
     // Media Queries         
     @include media($m) {
-                  @include span-columns(10);
-                  @include shift(1);
-                  }
+            @include span-columns(10);
+            @include shift(1);
+            }
     //
 }
 .project_container{
-  padding-top: 75px;
-  border-bottom: 1px solid $lightgray;
+  padding-top: 40px;
+  
+  // Media Queries         
+    @include media($m) {
+            border-bottom: 1px solid $lightgray;
+            padding-top: 50px;
+            }
+    //
 }
 
 .project li{
@@ -242,6 +253,7 @@ h2{
 .project-image{
   position: relative;
   @include no-space;
+  padding-bottom: 15px;
   &:after{
     content: '';
     width:100%;
@@ -251,9 +263,16 @@ h2{
     background-color:$lightgray;
     bottom:0;
     z-index:1;
+    text-align: center;
   }
     // Media Queries 
-    @include media($l) {
+    @include media($m) {
+      &:after{
+         display:none;
+    }
+    @include span-columns(3.5 of 10);
+    }
+     @include media($l) {
       &:after{
          display:none;
     }
@@ -261,10 +280,74 @@ h2{
     }
     //
 }
+.centrar-imatges{
+  width: 335px;
+  height: 365px;
+  @include no-space;
+  margin:0 auto; 
+  position: relative;
+  // Media Queries
+    @include media($m) {
+      width: 100%;
+      height: auto;
 
-.marc-foto-L{
+    }
+    //
+}
+.marc-foto-1{
+  width: 190px;
+  height: 365px;
+  box-shadow: 0 10px 15px 0 rgba(0, 71, 92, 0.3), 0 6px 20px 0 rgba(0, 71, 92, 0.3);
   @include no-space;  
+  z-index: 999;
+  position: absolute;
+  right: 10%;
+    // Media Queries 
+    @include media($m) {
+      width: 192px;
+      height: 370px;
+      position: absolute;
+      right: 0;
+    }
+    @include media($l) {
+      width: 214px;
+      height: 413px;
+      // position: absolute;
+      // right: 0;
+    }
+    //
+}
+.marc-foto-2{
+  width: 190px;
+  height: 325px;
+  background-color: green;
+  box-shadow: 0 10px 15px 0 rgba(0, 71, 92, 0.3), 0 6px 20px 0 rgba(0, 71, 92, 0.3);
+  @include no-space;  
+  z-index: 998;
+  position: relative;
+  left: 10%;
+  top:23px;
+    // Media Queries 
+    @include media($m) { 
+      width: 170px;
+      height: 328px;
+      position: relative;    
+      left:0%;
+    }  
+    @include media($l) { 
+      width: 190px;
+      height: 370px;
+      position: relative;    
+      left:13%;
+    }  
+}
+
+/////// Fins aqui tot ok /////
+
+.marc-foto{
   height:470px;
+  @include no-space;  
+  @include clearfix;
     // Media Queries 
     @include media($l) {
       max-height:490px;
@@ -292,6 +375,30 @@ h2{
   top: 0;
   right:0;
 }
+
+
+.img2ok{
+  max-width: 100%;
+  height: auto;
+  background-color: green;
+  z-index: 998;
+  margin-top: 20px;
+  box-shadow: 0 10px 15px 0 rgba(0, 71, 92, 0.3), 0 6px 20px 0 rgba(0, 71, 92, 0.3);
+  position: absolute;
+  top: 0;
+  // right:40%;
+     // Media Queries
+    //  @include media($m) {
+    //   right:90%;
+    // }
+     @include media($l) {
+      left:15%;
+    }
+    // @include media($xl) {
+    //   right:58%;
+    // }
+    //
+}
 .img2{
   z-index: 998;
   margin-top: 20px;
@@ -311,9 +418,233 @@ h2{
     // }
     //
 }
+
+//Project Images//
+.image1{ 
+  // MOBILE
+  background-image: url(../img/img1_S.jpg); 
+      // RETINA
+      @include hidpi(2) {
+        background-image: url(../img/img1_S_@2x.jpg);  
+        background-size: 100%;
+      }
+  // TABLET
+  @include media($m) {
+  background-image: url(../img/img1_M.jpg);  
+       // RETINA
+        @include hidpi(2) {
+          background-image: url(../img/img1_M_@2x.jpg);  
+          background-size: 100%;
+        }
+   }
+ // DESKTOP
+  @include media($l) {
+  background-image: url(../img/img1_L.jpg);  
+       // RETINA
+        @include hidpi(2) {
+          background-image: url(../img/img1_L_@2x.jpg);  
+          background-size: 100%;
+        }
+      }
+}
+.image2{ 
+  // MOBILE
+  background-image: url(../img/img2_S.jpg); 
+      // RETINA
+      @include hidpi(2) {
+        background-image: url(../img/img2_S_@2x.jpg);  
+        background-size: 100%;
+      }
+  // TABLET
+  @include media($m) {
+  background-image: url(../img/img2_M.jpg);  
+       // RETINA
+        @include hidpi(2) {
+          background-image: url(../img/img2_M_@2x.jpg);  
+          background-size: 100%;
+        }
+   }
+ // DESKTOP
+  @include media($l) {
+  background-image: url(../img/img2_L.jpg);  
+       // RETINA
+        @include hidpi(2) {
+          background-image: url(../img/img2_L_@2x.jpg);  
+          background-size: 100%;
+        }
+      }
+}
+.image3{
+  // MOBILE
+  background-image: url(../img/img3_S.jpg); 
+      // RETINA
+      @include hidpi(2) {
+        background-image: url(../img/img3_S_@2x.jpg);  
+        background-size: 100%;
+      }
+  // TABLET
+  @include media($m) {
+  background-image: url(../img/img3_M.jpg);  
+       // RETINA
+        @include hidpi(2) {
+          background-image: url(../img/img3_M_@2x.jpg);  
+          background-size: 100%;
+        }
+   }
+ // DESKTOP
+  @include media($l) {
+  background-image: url(../img/img3_L.jpg);  
+       // RETINA
+        @include hidpi(2) {
+          background-image: url(../img/img3_L_@2x.jpg);  
+          background-size: 100%;
+        }
+      }
+}
+.image4{
+  // MOBILE
+  background-image: url(../img/img4_S.jpg); 
+      // RETINA
+      @include hidpi(2) {
+        background-image: url(../img/img4_S_@2x.jpg);  
+        background-size: 100%;
+      }
+  // TABLET
+  @include media($m) {
+  background-image: url(../img/img4_M.jpg);  
+       // RETINA
+        @include hidpi(2) {
+          background-image: url(../img/img4_M_@2x.jpg);  
+          background-size: 100%;
+        }
+   }
+ // DESKTOP
+  @include media($l) {
+  background-image: url(../img/img4_L.jpg);  
+       // RETINA
+        @include hidpi(2) {
+          background-image: url(../img/img4_L_@2x.jpg);  
+          background-size: 100%;
+        }
+      }
+}
+.image5{
+  // MOBILE
+  background-image: url(../img/img5_S.jpg); 
+      // RETINA
+      @include hidpi(2) {
+        background-image: url(../img/img5_S_@2x.jpg);  
+        background-size: 100%;
+      }
+  // TABLET
+  @include media($m) {
+  background-image: url(../img/img5_M.jpg);  
+       // RETINA
+        @include hidpi(2) {
+          background-image: url(../img/img5_M_@2x.jpg);  
+          background-size: 100%;
+        }
+   }
+ // DESKTOP
+  @include media($l) {
+  background-image: url(../img/img5_L.jpg);  
+       // RETINA
+        @include hidpi(2) {
+          background-image: url(../img/img5_L_@2x.jpg);  
+          background-size: 100%;
+        }
+      }
+}
+.image6{
+  // MOBILE
+  background-image: url(../img/img6_S.jpg); 
+      // RETINA
+      @include hidpi(2) {
+        background-image: url(../img/img6_S_@2x.jpg);  
+        background-size: 100%;
+      }
+  // TABLET
+  @include media($m) {
+  background-image: url(../img/img6_M.jpg);  
+       // RETINA
+        @include hidpi(2) {
+          background-image: url(../img/img6_M_@2x.jpg);  
+          background-size: 100%;
+        }
+   }
+ // DESKTOP
+  @include media($l) {
+  background-image: url(../img/img6_L.jpg);  
+       // RETINA
+        @include hidpi(2) {
+          background-image: url(../img/img6_L_@2x.jpg);  
+          background-size: 100%;
+        }
+      }
+}
+.image7{
+  // MOBILE
+  background-image: url(../img/img7_S.jpg); 
+      // RETINA
+      @include hidpi(2) {
+        background-image: url(../img/img7_S_@2x.jpg);  
+        background-size: 100%;
+      }
+  // TABLET
+  @include media($m) {
+  background-image: url(../img/img7_M.jpg);  
+       // RETINA
+        @include hidpi(2) {
+          background-image: url(../img/img7_M_@2x.jpg);  
+          background-size: 100%;
+        }
+   }
+ // DESKTOP
+  @include media($l) {
+  background-image: url(../img/img7_L.jpg);  
+       // RETINA
+        @include hidpi(2) {
+          background-image: url(../img/img7_L_@2x.jpg);  
+          background-size: 100%;
+        }
+      }
+}
+.image8{
+  // MOBILE
+  background-image: url(../img/img8_S.jpg); 
+      // RETINA
+      @include hidpi(2) {
+        background-image: url(../img/img8_S_@2x.jpg);  
+        background-size: 100%;
+      }
+  // TABLET
+  @include media($m) {
+  background-image: url(../img/img8_M.jpg);  
+       // RETINA
+        @include hidpi(2) {
+          background-image: url(../img/img8_M_@2x.jpg);  
+          background-size: 100%;
+        }
+   }
+ // DESKTOP
+  @include media($l) {
+  background-image: url(../img/img8_L.jpg);  
+       // RETINA
+        @include hidpi(2) {
+          background-image: url(../img/img8_L_@2x.jpg);  
+          background-size: 100%;
+        }
+      }
+}
+//End of Images//
+
 .project-text{
   @include no-space;
     // Media Queries
+    @include media($m) {
+      background-color: #fff;
+      @include span-columns(6.5 of 10);
+      }
     @include media($l) {
       background-color: #fff;
       @include span-columns(5.5 of 10);
@@ -327,8 +658,16 @@ h2{
   line-height: 1;
   @include no-space;
   text-align: center;
+  padding-top: 20px;
     // Media Queries
     @include media($m) {
+        background-color: #ffffff;
+        text-align: left;
+        @include roboto(400, 2em);
+        margin-top: 20px;
+        margin-left: 30px;
+              }
+    @include media($l) {
         background-color: #ffffff;
         text-align: left;
         @include roboto(400, 2em);
@@ -353,9 +692,15 @@ h2{
   line-height: 1;
   @include no-space;
   text-align: center;
-  padding: 5px 10% 5px 10%;
+  padding: 5px 10% 0 10%;
     // Media Queries
     @include media($m) {
+       text-align: left;
+       padding: 0;
+       margin-left: 30px;
+       background-color: white;
+       }
+    @include media($l) {
        text-align: left;
        padding: 0;
        margin-left: 50px;
@@ -377,11 +722,19 @@ h2{
   @include no-space;
   margin-left:30px;
   margin-right: 30px;
-  padding-top:25px;
-  padding-bottom:60px;
+  padding-top:20px;
+  padding-bottom:50px;
   z-index: 1;
+  text-align: center;
     // Media Queries
     @include media($m) {
+        text-align: left;
+        margin-left:30px;
+        margin-right: 30px;
+        padding-top: 30px;
+        padding-bottom: 60px;
+                  }
+    @include media($l) {
         margin-left:50px;
         margin-right: 40px;
         padding-top:40px;
@@ -393,6 +746,11 @@ h2{
   background-color:$lightgray;
   position:relative;
     // Media Queries
+    @include media($m) {
+      height:220px;
+      margin-top:20px;
+      margin-right: 30px;
+      }
     @include media($l) {
       height:240px;
       margin-top:35px;
@@ -414,6 +772,11 @@ h2{
   z-index: 99999;
   position:relative;
     // Media Queries
+    @include media($m) {
+      float:right;
+      position:relative;
+      margin-top: 0px;
+    }
     @include media($l) {
       float:right;
       position:relative;
@@ -746,6 +1109,138 @@ padding:0;
  }
 
 
+
+/* ==========================================================================
+   Retina Images
+   ========================================================================== */
+
+///////////////////////////// Mode1 Using HTML Markup and displays
+
+.retina-block{
+ @include box(100%,400px);
+ background: blue;
+ margin-top: 30px;
+}
+.retina-image{
+ width: 100%;
+ max-width: auto;
+ margin: 0 auto;
+ padding-top: 30px;
+  img{
+   width: 100%;
+  }
+}
+
+  .normalized{
+   display: block;
+   //RETINA
+   @include hidpi(2) {
+     display: none;
+   }
+  }
+  .retinized{
+   display: none;
+   // RETINA
+   @include hidpi(2) {
+     display: block;
+   }
+  }
+
+///////////////////////////// Mode2  through CSS
+
+ .box-for-image{
+   width: 300px;
+   height: 300px;
+   margin: 0 auto;
+   // background-color: green;
+}
+
+
+
+
+// RESPONSIVE+RETINA IMAGE DECLARATION
+
+.image9{
+  // MOBILE
+  background-image: url(../img/img9_S.png); 
+      // RETINA
+      @include hidpi(2) {
+        background-image: url(../img/img9_S_@2x.png);  
+        background-size: 100%;
+      }
+  // TABLET
+  @include media($m) {
+  background-image: url(../img/img9_L.png);  
+       // RETINA
+        @include hidpi(2) {
+          background-image: url(../img/img9_L_@2x.png);  
+          background-size: 100%;
+        }
+   }
+ // DESKTOP
+  @include media($l) {
+  background-image: url(../img/img9_L.png);  
+       // RETINA
+        @include hidpi(2) {
+          background-image: url(../img/img9_L_@2x.png);  
+          background-size: 100%;
+        }
+      }
+}
+.image10{
+  // MOBILE
+  background-image: url(../img/img10_L.png); 
+      // RETINA
+      @include hidpi(2) {
+        background-image: url(../img/img10_L_@2x.png);  
+        background-size: 100%;
+      }
+  // TABLET
+  @include media($m) {
+  background-image: url(../img/img10_L.png);  
+       // RETINA
+        @include hidpi(2) {
+          background-image: url(../img/img10_L_@2x.png);  
+          background-size: 100%;
+        }
+   }
+ // DESKTOP
+  @include media($l) {
+  background-image: url(../img/img10_L.png);  
+       // RETINA
+        @include hidpi(2) {
+          background-image: url(../img/img10_L_@2x.png);  
+          background-size: 100%;
+        }
+      }
+}
+.image11{
+  // MOBILE
+  background-image: url(../img/img11_S.png); 
+      // RETINA
+      @include hidpi(2) {
+        background-image: url(../img/img11_S_@2x.png);  
+        background-size: 100%;
+      }
+  // TABLET
+  @include media($m) {
+  background-image: url(../img/img11_L.png);  
+       // RETINA
+        @include hidpi(2) {
+          background-image: url(../img/img11_L_@2x.png);  
+          background-size: 100%;
+        }
+   }
+ // DESKTOP
+  @include media($l) {
+  background-image: url(../img/img11_L.png);  
+       // RETINA
+        @include hidpi(2) {
+          background-image: url(../img/img11_L_@2x.png);  
+          background-size: 100%;
+        }
+      }
+}
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -760,3 +1255,6 @@ padding:0;
 
 
 @import 'print';
+ 
+// //Retina
+// @include hidpi(2);
