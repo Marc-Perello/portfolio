@@ -44,7 +44,7 @@ header{
 }
 
 .logo{
-  border-left: 1px solid $blacky;
+  border-left: 1px solid $blaucel;
   padding-left:15px;
   margin-top: 25px;
   @include span-columns(11);
@@ -117,9 +117,6 @@ h1{
             }
   //
 }
-
-
-
 
 
 /* ==========================================================================
@@ -204,7 +201,7 @@ h2{
    ========================================================================== */
 
 .title-projects{
-  border-left: 1px solid $blacky;
+  border-left: 1px solid $blaucel;
   padding-left:15px;
   margin-top: 40px;
   @include span-columns(11);
@@ -250,6 +247,8 @@ h2{
   list-style-type: none;
   @include clearfix;
 }
+
+// Posicionament d'Imatges 
 .project-image{
   position: relative;
   @include no-space;
@@ -273,6 +272,7 @@ h2{
     @include span-columns(3.5 of 10);
     }
      @include media($l) {
+      padding:0;
       &:after{
          display:none;
     }
@@ -301,7 +301,7 @@ h2{
   @include no-space;  
   z-index: 999;
   position: absolute;
-  right: 10%;
+  right: 15%;
     // Media Queries 
     @include media($m) {
       width: 192px;
@@ -312,8 +312,6 @@ h2{
     @include media($l) {
       width: 214px;
       height: 413px;
-      // position: absolute;
-      // right: 0;
     }
     //
 }
@@ -342,84 +340,83 @@ h2{
     }  
 }
 
-/////// Fins aqui tot ok /////
+//Per Esborrar
+// .marc-foto{
+//   height:470px;
+//   @include no-space;  
+//   @include clearfix;
+//     // Media Queries 
+//     @include media($l) {
+//       max-height:490px;
+//     }
+//     //   
+// }
+// .fotos-centre{
+//   max-width: 80%;
+//   margin: 0 auto;
+//   display:block;
+//   background-color: red;
+//   position: relative;
+//     // Media Queries
+//     @include media($l) {
+//       max-width: 100%;
+//       right:0;
+//       margin-right: 0;
+//     }
+//     //
+// }
+// .img1{
+//   z-index: 999;
+//   box-shadow: 0 10px 15px 0 rgba(0, 71, 92, 0.3), 0 6px 20px 0 rgba(0, 71, 92, 0.3);
+//   position: absolute;
+//   top: 0;
+//   right:0;
+// }
 
-.marc-foto{
-  height:470px;
-  @include no-space;  
-  @include clearfix;
-    // Media Queries 
-    @include media($l) {
-      max-height:490px;
-    }
-    //   
-}
-.fotos-centre{
-  max-width: 80%;
-  margin: 0 auto;
-  display:block;
-  background-color: red;
-  position: relative;
-    // Media Queries
-    @include media($l) {
-      max-width: 100%;
-      right:0;
-      margin-right: 0;
-    }
-    //
-}
-.img1{
-  z-index: 999;
-  box-shadow: 0 10px 15px 0 rgba(0, 71, 92, 0.3), 0 6px 20px 0 rgba(0, 71, 92, 0.3);
-  position: absolute;
-  top: 0;
-  right:0;
-}
 
+// .img2ok{
+//   max-width: 100%;
+//   height: auto;
+//   background-color: green;
+//   z-index: 998;
+//   margin-top: 20px;
+//   box-shadow: 0 10px 15px 0 rgba(0, 71, 92, 0.3), 0 6px 20px 0 rgba(0, 71, 92, 0.3);
+//   position: absolute;
+//   top: 0;
+//   // right:40%;
+//      // Media Queries
+//     //  @include media($m) {
+//     //   right:90%;
+//     // }
+//      @include media($l) {
+//       left:15%;
+//     }
+//     // @include media($xl) {
+//     //   right:58%;
+//     // }
+//     //
+// }
+// .img2{
+//   z-index: 998;
+//   margin-top: 20px;
+//   box-shadow: 0 10px 15px 0 rgba(0, 71, 92, 0.3), 0 6px 20px 0 rgba(0, 71, 92, 0.3);
+//   position: absolute;
+//   top: 0;
+//   // right:40%;
+//      // Media Queries
+//     //  @include media($m) {
+//     //   right:90%;
+//     // }
+//      @include media($l) {
+//       left:15%;
+//     }
+//     // @include media($xl) {
+//     //   right:58%;
+//     // }
+//     //
+// }
 
-.img2ok{
-  max-width: 100%;
-  height: auto;
-  background-color: green;
-  z-index: 998;
-  margin-top: 20px;
-  box-shadow: 0 10px 15px 0 rgba(0, 71, 92, 0.3), 0 6px 20px 0 rgba(0, 71, 92, 0.3);
-  position: absolute;
-  top: 0;
-  // right:40%;
-     // Media Queries
-    //  @include media($m) {
-    //   right:90%;
-    // }
-     @include media($l) {
-      left:15%;
-    }
-    // @include media($xl) {
-    //   right:58%;
-    // }
-    //
-}
-.img2{
-  z-index: 998;
-  margin-top: 20px;
-  box-shadow: 0 10px 15px 0 rgba(0, 71, 92, 0.3), 0 6px 20px 0 rgba(0, 71, 92, 0.3);
-  position: absolute;
-  top: 0;
-  // right:40%;
-     // Media Queries
-    //  @include media($m) {
-    //   right:90%;
-    // }
-     @include media($l) {
-      left:15%;
-    }
-    // @include media($xl) {
-    //   right:58%;
-    // }
-    //
-}
-
-//Project Images//
+// PROJECT IMAGES - RESPONSIVE+RETINA IMAGE DECLARATION
 .image1{ 
   // MOBILE
   background-image: url(../img/img1_S.jpg); 
@@ -658,13 +655,13 @@ h2{
   line-height: 1;
   @include no-space;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 15px;
     // Media Queries
     @include media($m) {
         background-color: #ffffff;
         text-align: left;
         @include roboto(400, 2em);
-        margin-top: 20px;
+        margin-top: 15px;
         margin-left: 30px;
               }
     @include media($l) {
@@ -689,22 +686,21 @@ h2{
 .project-name{
   @include slab(700, 3.6em);
   background-color: $lightgray;
-  line-height: 1;
+  line-height: 1.2;
   @include no-space;
   text-align: center;
   padding: 5px 10% 0 10%;
     // Media Queries
     @include media($m) {
+       line-height: 1;
        text-align: left;
        padding: 0;
+       padding-top: 5px;
        margin-left: 30px;
        background-color: white;
        }
     @include media($l) {
-       text-align: left;
-       padding: 0;
        margin-left: 50px;
-       background-color: white;
        }
     // 
 }
@@ -729,14 +725,14 @@ h2{
     // Media Queries
     @include media($m) {
         text-align: left;
-        margin-left:30px;
-        margin-right: 30px;
-        padding-top: 30px;
+        // margin-left:30px;
+        // margin-right: 30px;
+        padding-top: 25px;
         padding-bottom: 60px;
                   }
     @include media($l) {
         margin-left:50px;
-        margin-right: 40px;
+        margin-right: 45px;
         padding-top:40px;
                   }
     // 
@@ -747,18 +743,18 @@ h2{
   position:relative;
     // Media Queries
     @include media($m) {
-      height:220px;
+      height:215px;
       margin-top:20px;
       margin-right: 30px;
       }
     @include media($l) {
       height:240px;
-      margin-top:35px;
+      margin-top:33px;
       margin-right: 52px;
       }
     //
 }
-.cta-ok{
+.cta{
   @include slab(700, 2em);
   text-decoration: none;
   text-align: center;
@@ -768,19 +764,17 @@ h2{
   border: $blaucel solid 2px;
   max-width: 200px;
   display:block;
-  margin:-25px auto 80px auto;
+  margin:-25px auto 40px auto;
   z-index: 99999;
   position:relative;
     // Media Queries
     @include media($m) {
+      margin-bottom:50px;
       float:right;
-      position:relative;
       margin-top: 0px;
     }
     @include media($l) {
-      float:right;
-      position:relative;
-      margin-top: 0px;
+      margin-bottom:60px;
     }
     // 
 }
@@ -834,21 +828,27 @@ h2{
 /* ==========================================================================
    Other Projects
    ========================================================================== */
-// #other-projects{
-//   margin-top:70px;
-// }
+#other-projects{
+  margin-top:40px;
+  // Media Queries
+      @include media($m) {
+               margin-top:70px;
+                }
+    // 
+}
 
 .title-other{
   border-left: 1px solid white;
   padding-left:15px;
-  margin-top: 60px;
+  margin-top: 40px;
   @include span-columns(11);
   @include shift(1);
     // Media Queries
       @include media($m) {
+               padding-left:25px;
+               margin-top: 60px;
                @include span-columns(11.5);
                @include shift(.5);
-               padding-left:25px;
                 }
     // 
   }
@@ -857,6 +857,16 @@ h2{
   @include no-space;
   @include span-columns(10);
   @include shift(1);
+  // Media Queries
+      @include media($m) {
+        @include span-columns(11);
+        @include shift(0.5);
+      }
+      @include media($l) {
+        @include span-columns(10);
+        @include shift(1);
+      }
+    //
 }
 
 
@@ -864,21 +874,11 @@ h2{
   text-align: center;
   @include span-columns(3 of 3);
   @include no-space;
-  margin-top: 50px;
+   margin-top: 35px;
     // Media Queries
-    @include media($l) {
+    @include media($m) {
           @include span-columns(1 of 3);
               }
-    // 
-  img{
-    width: auto;
-    @include no-space;
-      // Media Queries
-      @include media($m) {
-        max-width: 100%;
-      }
-      //
-  }
 }
 
 h3{
@@ -886,8 +886,15 @@ h3{
   color: $blacky;
   @include no-space;
   text-align: center;
+  margin-top: 0px;
   span{
     color: $blaufosc;  }
+    // Media Queries
+    @include media($m) {
+     @include slab(700, 2.3em);
+      margin-top: 15px;
+    }
+    // 
 }
 
 .p-white{
@@ -897,41 +904,185 @@ h3{
   text-align: center;
   @include no-space;
   padding: 0;
-  margin-top: 4px;
+  margin: 5px auto 5px auto;
     // Media Queries
     @include media($m) {
-      width: 80%;
-      margin: 4px auto 0 auto;
+      width: 92%;
+      @include roboto(300, 1.8em);
+    }
+    @include media($l) {
+      @include roboto(300, 2em);
     }
     // 
 }
-.cta-footer{
-  width: 100%;
-  height:36pt;
-  display:block;
-  @include slab(700, 2em);
-  text-decoration: none;
-  border: white solid 2px;
-  background-color: $blaucel;
-  @include span-columns(8);
-  @include shift(2);
-  padding-top: 5pt;
-  padding-bottom: 6pt;
-  text-align: center;
-  color: white;
-  margin-top: 70px;
-  margin-bottom: 50px;
+
+// Other Projects Images 
+
+.centrar-imatges-2{
+  width: auto;
+  height: auto;
+  @include no-space;
+  margin-top: 10px;
   // Media Queries
-      @include media($m) {
-            @include span-columns(2);
-            @include shift(5);
-                }
-  // 
+    @include media($m) {
+      width: 100%;
+      height: auto;
+      margin-top: 0px;
+    }
+    //
+}
+ .box-for-image-h{
+   position: relative;
+   width: 100%;
+   height: 210px;
+   max-width: 300px;
+   margin: 0 auto;
+   background: center no-repeat;
+   // Media Queries
+    @include media($m) {
+      width: 90%;
+      height: 220px; 
+      background-position: bottom;
+      }
+    @include media($l) {
+      height: 305px;
+      }
+    //
+}
+ .box-for-image-v{
+   position: relative;
+   width: 100%;
+   height: 312px;
+   max-width: 300px;
+   margin: 0 auto;
+   background: center no-repeat;
+   // Media Queries
+    @include media($m) {
+      width: 90%;
+      height: 220px; 
+      background-position: bottom;
+      background-size: auto 100%;
+      }
+    @include media($l) {
+      max-width: 300px;
+      height: 305px;
+        @include hidpi(2) { 
+            background-size: 100%;
+          }
+      }
+    //
 }
 
-/* Sweep To Right de blau a blanc*/
+// RESPONSIVE+RETINA IMAGE DECLARATION
+
+.image9{
+  // MOBILE
+  background-image: url(../img/img9_S.png); 
+      // RETINA
+      @include hidpi(2) {
+        background-image: url(../img/img9_S_@2x.png);  
+        background-size: 100%;
+      }
+  // TABLET
+  @include media($m) {
+  background-image: url(../img/img9_L.png);  
+       // RETINA
+        @include hidpi(2) {
+          background-image: url(../img/img9_L_@2x.png);  
+          background-size: 100%;
+        }
+   }
+ // DESKTOP
+  @include media($l) {
+  background-image: url(../img/img9_L.png);  
+       // RETINA
+        @include hidpi(2) {
+          background-image: url(../img/img9_L_@2x.png);  
+          background-size: 100%;
+        }
+      }
+}
+.image10{
+  // MOBILE
+  background-image: url(../img/img10_S.png); 
+      // RETINA
+      @include hidpi(2) {
+        background-image: url(../img/img10_S_@2x.png);  
+        background-size: 100%;
+      }
+  // TABLET
+  @include media($m) {
+  background-image: url(../img/img10_L.png);  
+       // RETINA
+        @include hidpi(2) {
+          background-image: url(../img/img10_L_@2x.png);  
+          background-size: auto 100%;
+        }
+   }
+ // DESKTOP
+  @include media($l) {
+  background-image: url(../img/img10_L.png);  
+       // RETINA
+        @include hidpi(2) {
+          background-image: url(../img/img10_L_@2x.png);  
+          background-size: 100%;
+        }
+      }
+}
+.image11{
+  // MOBILE
+  background-image: url(../img/img11_S.png); 
+      // RETINA
+      @include hidpi(2) {
+        background-image: url(../img/img11_S_@2x.png);  
+        background-size: 100%;
+      }
+  // TABLET
+  @include media($m) {
+  background-image: url(../img/img11_L.png);  
+       // RETINA
+        @include hidpi(2) {
+          background-image: url(../img/img11_L_@2x.png);  
+          background-size: 100%;
+        }
+   }
+ // DESKTOP
+  @include media($l) {
+  background-image: url(../img/img11_L.png);  
+       // RETINA
+        @include hidpi(2) {
+          background-image: url(../img/img11_L_@2x.png);  
+          background-size: 100%;
+        }
+      }
+}
+
+.cta-footer{
+  @include slab(700, 2em);
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  background-color: $blaucel;
+  padding: 5pt 10pt 7pt 10pt;
+  border: white solid 2px;
+  width: 200px;
+  display:block;
+  margin: 50px auto 50px auto; 
+  position:relative;
+  // Media Queries
+    @include media($m) {
+      margin: 40px auto 40px auto; 
+      @include roboto(700, 1.8em);
+    }
+    @include media($l) {
+        @include slab(700, 2em);
+    }
+    // 
+}
+
+/* Sweep To Right de blau a blanc (Boto)*/
 .hvr-sweep-to-right2 {
-  display: inline-block;
+  display: block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
@@ -991,7 +1142,12 @@ h3{
    Footer
    ========================================================================== */
 footer{
-margin-top:40px;
+margin-top:20px;
+// Media Queries
+    @include media($m) {
+            margin-top:40px;
+            }
+    //
 }
 .social-media-footer{
 @include span-columns(12);
@@ -1015,14 +1171,15 @@ margin-top:40px;
     //
 }
 .subtitle-right{
-  @include slab(700, 1.6em);
-  color:$blacky;
+  @include slab(300, 1.4em);
+  color:$midgray;
   line-height: 2em;
   text-align: center;
   @include no-space;
     // Media Queries
     @include media($m) {
               @include slab(700, 2em);
+              color:$blacky;
               text-align: right;
               }
     //
@@ -1035,9 +1192,17 @@ margin-top:40px;
     @include media($m) {
           @include span-columns(4);
           @include shift(3);
-          margin-top: 0px;
               }
     // 
+}
+.bcn-cta{
+  color:$midgray;
+  text-decoration: none;
+  // Media Queries
+    @include media($m) {
+              color:$blacky;
+              }
+    //
 }
 
 .table{
@@ -1052,9 +1217,9 @@ margin-top:40px;
 .social-media-footer ul{
   width: 100%;
   display:block;
-  margin: 15px auto 20px auto;
+  margin: 5px auto 0 auto;
   padding-left: 0px;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
     // Media Queries
     @include media($m) {
       @include no-space;
@@ -1102,8 +1267,8 @@ padding:0;
       // Media Queries
       @include media($m) {
         @include roboto(400, 1.4em);
-        margin-bottom: 20px;
         text-align: right;
+        margin-top: 10px;
         }
       // 
  }
@@ -1111,136 +1276,44 @@ padding:0;
 
 
 /* ==========================================================================
-   Retina Images
+   Retina Images - Mètode alternatiu - guardar
    ========================================================================== */
 
-///////////////////////////// Mode1 Using HTML Markup and displays
+// ///////////////////////////// Mode1 Using HTML Markup and displays
 
-.retina-block{
- @include box(100%,400px);
- background: blue;
- margin-top: 30px;
-}
-.retina-image{
- width: 100%;
- max-width: auto;
- margin: 0 auto;
- padding-top: 30px;
-  img{
-   width: 100%;
-  }
-}
+// .retina-block{
+//  @include box(100%,400px);
+//  background: blue;
+//  margin-top: 30px;
+// }
+// .retina-image{
+//  width: auto;
+//  max-width: auto;
+//  margin: 0 auto;
+//  padding-top: 30px;
+//   img{
+//    width: 100%;
+//   }
+// }
 
-  .normalized{
-   display: block;
-   //RETINA
-   @include hidpi(2) {
-     display: none;
-   }
-  }
-  .retinized{
-   display: none;
-   // RETINA
-   @include hidpi(2) {
-     display: block;
-   }
-  }
+//   .normalized{
+//    display: block;
+//    //RETINA
+//    @include hidpi(2) {
+//      display: none;
+//    }
+//   }
+//   .retinized{
+//    display: none;
+//    // RETINA
+//    @include hidpi(2) {
+//      display: block;
+//    }
+//   }
 
 ///////////////////////////// Mode2  through CSS
 
- .box-for-image{
-   width: 300px;
-   height: 300px;
-   margin: 0 auto;
-   // background-color: green;
-}
 
-
-
-
-// RESPONSIVE+RETINA IMAGE DECLARATION
-
-.image9{
-  // MOBILE
-  background-image: url(../img/img9_S.png); 
-      // RETINA
-      @include hidpi(2) {
-        background-image: url(../img/img9_S_@2x.png);  
-        background-size: 100%;
-      }
-  // TABLET
-  @include media($m) {
-  background-image: url(../img/img9_L.png);  
-       // RETINA
-        @include hidpi(2) {
-          background-image: url(../img/img9_L_@2x.png);  
-          background-size: 100%;
-        }
-   }
- // DESKTOP
-  @include media($l) {
-  background-image: url(../img/img9_L.png);  
-       // RETINA
-        @include hidpi(2) {
-          background-image: url(../img/img9_L_@2x.png);  
-          background-size: 100%;
-        }
-      }
-}
-.image10{
-  // MOBILE
-  background-image: url(../img/img10_L.png); 
-      // RETINA
-      @include hidpi(2) {
-        background-image: url(../img/img10_L_@2x.png);  
-        background-size: 100%;
-      }
-  // TABLET
-  @include media($m) {
-  background-image: url(../img/img10_L.png);  
-       // RETINA
-        @include hidpi(2) {
-          background-image: url(../img/img10_L_@2x.png);  
-          background-size: 100%;
-        }
-   }
- // DESKTOP
-  @include media($l) {
-  background-image: url(../img/img10_L.png);  
-       // RETINA
-        @include hidpi(2) {
-          background-image: url(../img/img10_L_@2x.png);  
-          background-size: 100%;
-        }
-      }
-}
-.image11{
-  // MOBILE
-  background-image: url(../img/img11_S.png); 
-      // RETINA
-      @include hidpi(2) {
-        background-image: url(../img/img11_S_@2x.png);  
-        background-size: 100%;
-      }
-  // TABLET
-  @include media($m) {
-  background-image: url(../img/img11_L.png);  
-       // RETINA
-        @include hidpi(2) {
-          background-image: url(../img/img11_L_@2x.png);  
-          background-size: 100%;
-        }
-   }
- // DESKTOP
-  @include media($l) {
-  background-image: url(../img/img11_L.png);  
-       // RETINA
-        @include hidpi(2) {
-          background-image: url(../img/img11_L_@2x.png);  
-          background-size: 100%;
-        }
-      }
-}
 /* ==========================================================================
    Media Queries
    ========================================================================== */
