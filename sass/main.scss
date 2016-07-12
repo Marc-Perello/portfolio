@@ -175,8 +175,8 @@ h2{
 .p-description{
   @include roboto(300, 2.4em);
   color:white;
-  line-height: 1.4em;
   @include no-space;
+  line-height: 1.4em;
 }
 .span-description {
   @include roboto(700, 1em);
@@ -340,81 +340,7 @@ h2{
     }  
 }
 
-//Per Esborrar
-// .marc-foto{
-//   height:470px;
-//   @include no-space;  
-//   @include clearfix;
-//     // Media Queries 
-//     @include media($l) {
-//       max-height:490px;
-//     }
-//     //   
-// }
-// .fotos-centre{
-//   max-width: 80%;
-//   margin: 0 auto;
-//   display:block;
-//   background-color: red;
-//   position: relative;
-//     // Media Queries
-//     @include media($l) {
-//       max-width: 100%;
-//       right:0;
-//       margin-right: 0;
-//     }
-//     //
-// }
-// .img1{
-//   z-index: 999;
-//   box-shadow: 0 10px 15px 0 rgba(0, 71, 92, 0.3), 0 6px 20px 0 rgba(0, 71, 92, 0.3);
-//   position: absolute;
-//   top: 0;
-//   right:0;
-// }
 
-
-// .img2ok{
-//   max-width: 100%;
-//   height: auto;
-//   background-color: green;
-//   z-index: 998;
-//   margin-top: 20px;
-//   box-shadow: 0 10px 15px 0 rgba(0, 71, 92, 0.3), 0 6px 20px 0 rgba(0, 71, 92, 0.3);
-//   position: absolute;
-//   top: 0;
-//   // right:40%;
-//      // Media Queries
-//     //  @include media($m) {
-//     //   right:90%;
-//     // }
-//      @include media($l) {
-//       left:15%;
-//     }
-//     // @include media($xl) {
-//     //   right:58%;
-//     // }
-//     //
-// }
-// .img2{
-//   z-index: 998;
-//   margin-top: 20px;
-//   box-shadow: 0 10px 15px 0 rgba(0, 71, 92, 0.3), 0 6px 20px 0 rgba(0, 71, 92, 0.3);
-//   position: absolute;
-//   top: 0;
-//   // right:40%;
-//      // Media Queries
-//     //  @include media($m) {
-//     //   right:90%;
-//     // }
-//      @include media($l) {
-//       left:15%;
-//     }
-//     // @include media($xl) {
-//     //   right:58%;
-//     // }
-//     //
-// }
 
 // PROJECT IMAGES - RESPONSIVE+RETINA IMAGE DECLARATION
 .image1{ 
@@ -882,7 +808,7 @@ h2{
 }
 
 h3{
-  @include slab(700, 2.4em);
+  @include slab(700, 3em);
   color: $blacky;
   @include no-space;
   text-align: center;
@@ -1147,6 +1073,9 @@ margin-top:20px;
     @include media($m) {
             margin-top:40px;
             }
+    @include media($l) {
+            margin-top:40px;
+            }
     //
 }
 .social-media-footer{
@@ -1269,6 +1198,7 @@ padding:0;
         @include roboto(400, 1.4em);
         text-align: right;
         margin-top: 10px;
+        margin-bottom: 40px;
         }
       // 
  }
