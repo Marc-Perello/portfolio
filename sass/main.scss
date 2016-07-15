@@ -15,6 +15,7 @@ $max-width: 1280px;
 
 html {
   font-size:100%;
+  @include animated-gradient;
 }
 
 body{
@@ -24,12 +25,18 @@ body{
 
 .container{
     @include outer-container($max-width);
+    background-color: white;
+}
+.container-transparent{
+    @include outer-container($max-width);
 }
 
 .full-width{
   width: 100%;
-  background-color: $blaucel;
-  // @include animated-gradient; 
+}
+.full-width-white{
+  width: 100%;
+  background-color: white;
 }
 
 
@@ -117,6 +124,7 @@ h1{
             }
   //
 }
+
 
 
 /* ==========================================================================
@@ -214,7 +222,15 @@ h2{
 /* ==========================================================================
    Featured Projects
    ========================================================================== */
-
+#featured-projects{
+  padding-bottom: 40px;
+  background-color: white;
+  // Media Queries
+      @include media($m) {
+                padding-bottom: 70px;
+                }
+    // 
+}
 .title-projects{
   border-left: 1px solid $blaucel;
   padding-left:15px;
@@ -726,17 +742,12 @@ h2{
 .hvr-sweep-to-right {
   display: block;
   vertical-align: middle;
-  -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
+  transition: color .3s;
 }
 
 .hvr-sweep-to-right:before {
@@ -748,22 +759,14 @@ h2{
   right: 0;
   bottom: 0;
   background: $blaucel;
-  -webkit-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-transform-origin: 0 50%;
   transform-origin: 0 50%;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
+  transition: transform .3s ease-out;
 }
 .hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
   color: white;
 }
 .hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
-  -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
 //
@@ -771,14 +774,14 @@ h2{
 /* ==========================================================================
    Other Projects
    ========================================================================== */
-#other-projects{
-  margin-top:40px;
-  // Media Queries
-      @include media($m) {
-               margin-top:70px;
-                }
-    // 
-}
+// #other-projects{
+//   margin-top:40px;
+//   // Media Queries
+//       @include media($m) {
+//                margin-top:70px;
+//                 }
+//     // 
+// }
 
 .title-other{
   border-left: 1px solid white;
@@ -1028,17 +1031,12 @@ h3{
 .hvr-sweep-to-right2 {
   display: block;
   vertical-align: middle;
-  -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
+  transition: color .3s;
 }
 
 .hvr-sweep-to-right2:before {
@@ -1050,16 +1048,9 @@ h3{
   right: 0;
   bottom: 0;
   background: #fff;
-  -webkit-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-transform-origin: 0 50%;
   transform-origin: 0 50%;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
+  transition: transform .3s ease-out;
 }
 .hvr-sweep-to-right2:hover, .hvr-sweep-to-right2:focus, .hvr-sweep-to-right2:active {
   color: $blaucel;
@@ -1086,13 +1077,13 @@ h3{
    Footer
    ========================================================================== */
 footer{
-margin-top:20px;
+padding-top: 20px;
 // Media Queries
     @include media($m) {
-            margin-top:40px;
+            padding-top:40px;
             }
     @include media($l) {
-            margin-top:40px;
+            padding-top:40px;
             }
     //
 }
