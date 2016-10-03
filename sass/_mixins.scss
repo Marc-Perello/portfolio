@@ -29,10 +29,10 @@ $midgray:#b9bfc1;
 
 
 @mixin animated-gradient {
-	// background: linear-gradient(316deg, #00586b, #00aad0);
-	background: linear-gradient(180deg, $blaucel, darken($blaucel, 5%) );
+	background: linear-gradient(180deg, $blaucel, adjust-hue($blaucel, 10%) );
+  // background: linear-gradient(180deg, #457fca, red);
 	background-size: 400% 400%;
-	animation: Gradient 12s ease infinite;
+	animation: Gradient 24s ease infinite;
 	
 }
 

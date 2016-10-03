@@ -111,21 +111,91 @@ h1{
 .social-media a{
   opacity:.3;
   text-decoration: none;
+  display: inline-block;
+  transform: translateZ(0);
+  transition-property: transform;
+  transition-duration: .3;
 }
+.social-media a:hover{
+  transform: scale(1.1);
+}
+// .diagonal{
+//   height: 25px;
+//   @include linear-gradient(to right bottom, #fff 50%, rgba(255,255,255,0)  50%);
+//     // Media Queries
+//     @include media($m) {
+//             height: 40px;
+//             }
+//     @include media($l) {
+//             height: 60px;
+//             }
+//   //
+// }
+
 .diagonal{
-  height: 25px;
-  @include linear-gradient(to right bottom, #fff 50%, $blaucel 50.5%);
+  padding-top: 30px;
+  position:relative;
+  &:before{
+    border:1px solid #f00;
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 100vw 0 0  ;
+    border-color: white transparent transparent transparent;
+  //@include linear-gradient(to right bottom, #fff 50%, rgba(255,255,255,0)  50%);
     // Media Queries
     @include media($m) {
-            height: 40px;
+            border-width: 40px 100vw 0 0  ;
             }
     @include media($l) {
-            height: 60px;
+            border-width: 60px 100vw 0 0  ;
+            }
+  }
+  //
+  // Media Queries
+    @include media($m) {
+            padding-top: 40px;
+            }
+    @include media($l) {
+            padding-top: 60px;
             }
   //
 }
-
-
+.diagonal-2{
+  padding-bottom: 30px;
+  position:relative;
+  &:before{
+    border:1px solid #f00;
+    content:'';
+    position:absolute;
+    bottom:0;
+    left:0;
+    width: 100%;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0  25px 100vw  ;
+    border-color: transparent transparent white transparent;
+    @include media($m) {
+            border-width: 0 0  40px 100vw;
+            }
+    @include media($l) {
+            border-width: 0 0  60px 100vw;
+            }
+  }
+  //
+  // Media Queries
+    @include media($m) {
+            padding-bottom: 40px;
+            }
+    @include media($l) {
+            padding-bottom: 60px;
+            }
+  //
+}
 
 /* ==========================================================================
    About
@@ -198,11 +268,11 @@ h2{
 .a-white{
   @include slab(700, 1em);
   color:white;
-  border-bottom: 2px dotted $blauhover;
+  border-bottom: 2px solid $blauhover;
   text-decoration: none;
   // Media Queries
     @include media($m) {
-      border-bottom: 3px dotted $blauhover;
+      border-bottom: 3px solid $blauhover;
     }
   //
 }
@@ -218,6 +288,7 @@ h2{
 .br-description{
   line-height: 3em;
   }
+
 
 /* ==========================================================================
    Featured Projects
@@ -1009,7 +1080,6 @@ h3{
   text-decoration: none;
   text-align: center;
   color: white;
-  background-color: $blaucel;
   padding: 5pt 10pt 7pt 10pt;
   border: white solid 2px;
   width: 200px;
@@ -1184,17 +1254,24 @@ padding:0;
 .social-media-footer a{
   opacity:.3;
   text-decoration: none;
+  display: inline-block;
+  transform: translateZ(0);
+  transition-property: transform;
+  transition-duration: .3;
 }
-.social-media-footer img{
-  width: 20pt;
-  height: 20pt;
-    // Media Queries
-        @include media($m) {
-            width: 100%;
-            height: 100%;
-          }
-    //
+.social-media-footer a:hover{
+  transform: scale(1.1);
 }
+// .social-media-footer img{
+//   width: 20pt;
+//   height: 20pt;
+//     // Media Queries
+//         @include media($m) {
+//             width: 100%;
+//             height: 100%;
+//           }
+//     //
+// }
 
 .copyright {
   @include roboto(300, 1.2em);
